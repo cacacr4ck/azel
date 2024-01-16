@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 
 
 MSG_ON = """
-**Azazel Project Actived ✅**
+**Zull Project Actived ✅**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 ◉ **Versi** : `{}`
 ◉ **Phython** : `{}`
@@ -32,7 +32,7 @@ MSG_ON = """
 
 async def main():
     await app.start()
-    LOGGER("Azazel Project").info("Memulai Ubot Pyro..")
+    LOGGER("Zull Project").info("Memulai Ubot Pyro..")
     for all_module in ALL_MODULES:
         importlib.import_module("Azazel.modules" + all_module)
     for bot in bots:
@@ -60,7 +60,7 @@ async def main():
               
 
 if __name__ == "__main__":
-    LOGGER("Azazel Project").info("Starting  Ubot")
+    LOGGER("Zull Project").info("Starting  Ubot")
     install()
 #    LOOP.run_until_complete(main())
     event_loop.run_until_complete(main())
