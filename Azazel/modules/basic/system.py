@@ -14,9 +14,9 @@ async def shutdown_bot(client, message):
         await client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**Azazel-Project** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await message.reply(" **Azazel-Project Berhasil di matikan!**")
+    await message.reply(" **ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ Berhasil di matikan!**")
     if HAPP is not None:
         HAPP.process_formation()["worker"].scale(0)
     else:
@@ -34,7 +34,7 @@ async def logs_ubot(client, message):
     await client.send_document(
         message.chat.id,
         "Logs-Heroku.txt",
-        thumb="https://telegra.ph//file/976ad753d6073dde1f579.jpg",
+        thumb="https://telegra.ph/file/c394b9d3247403031589d.png",
         caption="**This is your Heroku Logs**",
     )
     await biji.delete()
