@@ -22,8 +22,8 @@ async def buat_log(bot):
     if botlog:
         group_id = botlog.group_id
     else:
-        group_name = 'Azazel Project Bot Log'
-        group_description = 'Jangan Hapus Atau Keluar Dari Grup Ini\n\nCreated By @AzazelProjectBot.\nJika menemukan kendala atau ingin menanyakan sesuatu\nHubungi : @KynanSupport.'
+        group_name = 'Zull-Userbot Logs'
+        group_description = 'Jangan Hapus Atau Keluar Dari Grup Ini\n\nCreated By @zull_probot.\nJika menemukan kendala atau ingin menanyakan sesuatu\nHubungi : @mawingsupport.'
         group = await bot.create_supergroup(group_name, group_description)
         group_id = group.id
         text = 'Grup Log Berhasil Dibuat,\nKetik `id` untuk mendapatkan id log grup\nKemudian ketik `setlog` ID_GROUP\n\nContoh : setlog -100749492984'
@@ -57,7 +57,7 @@ def set_botlog(user_id, group_id):
     
 async def ajg(client):
     try:
-        await client.join_chat("kazusupportgrp")
-        await client.join_chat("kynansupport")
+        await client.join_chat("mawingsupport")
+        await client.join_chat("strbzul")
     except BaseException:
         pass
