@@ -100,10 +100,10 @@ async def absen(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command(["naya"], "") & filters.user(DEVS) & ~filters.me
+    filters.command(["zull"], "") & filters.user(DEVS) & ~filters.me
 )
 async def naya(client, message):
-    await message.reply_text("**Naya Punya Nya Kynan**🤩")
+    await message.reply_text("**Rain Punya Nya Zull**🤩")
 
 @Client.on_message(
     filters.command("gping", [""]) & filters.user(DEVS) & ~filters.me
