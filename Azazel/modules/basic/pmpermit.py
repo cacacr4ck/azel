@@ -20,7 +20,7 @@ DEF_UNAPPROVED_MSG = (
 "➣ ᴀᴛᴀᴜ ᴀɴᴅᴀ ᴏᴛᴏᴍᴀᴛɪs  sᴀʏᴀ ʙʟᴏᴋɪʀ\n"
 "╔═════════════════════╗\n"
 "  ㅤ     ⚡𝕡𝕖𝕤𝕒𝕟  𝕠𝕥𝕠𝕞𝕒𝕥𝕚𝕤⚡\n"
-"     ㅤ  ✮𝙰𝚉𝙰𝚉𝙴𝙻 𝙿𝚁𝙾𝙹𝙴𝙲𝚃✮ㅤㅤ  \n"
+"     ㅤ  ✮ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ✮ㅤㅤ  \n"
 "╚═════════════════════╝"
 )
 
@@ -97,7 +97,7 @@ async def auto_accept(client, message):
             approve(message.chat.id)
             await client.send_message(
                 message.chat.id,
-                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer Azazel-Project</b>",
+                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer Zull-Userbot</b>",
                 parse_mode=enums.ParseMode.HTML,
             )
         except IntegrityError:
