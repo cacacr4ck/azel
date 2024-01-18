@@ -30,15 +30,15 @@ from Azazel import CMD_HELP, StartTime, app, ids, cmds
 
 BOT_VER = "5.0.0"
 
-WHITE = [1970636001, 902478883, 2067434944, 1947740506, 1897354060, 1694909518, 5077932806]
+WHITE = [1086365745, 5569440742]
 
-BLACK = [1729700147, 1054295664]
+BLACK = [999999999]
 
 
 def support():
     buttons = [
         [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/kynansupport"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/mawingsupport"),
         ],
         [
             InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
@@ -94,7 +94,7 @@ async def alive_function(message, answers):
     ping = (datetime.now() - start).microseconds / 1000
     uptime = await get_readable_time((time.time() - StartTime))
     msg = (
-        f"<b>Azazel Project</b>\n"
+        f"<b>Zull Project</b>\n"
         f"      <b>status : {status} </b>\n"
         f"      <b>users :</b> <code>{user}</code>\n"
         f"      <b>ping_dc :</b> <code>{ping} ms</code>\n"
