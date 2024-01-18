@@ -216,7 +216,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: Azazel-Project Deploy Update is in Progress...`"
+            "`[HEROKU]: ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ Deploy Update is in Progress...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -233,7 +233,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`Azazel-Project Successfully Updated! Userbot can be used again.`"
+            "`ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ Successfully Updated! Userbot can be used again.`"
         )
     else:
         try:
@@ -242,7 +242,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`Azazel-Project Successfully Updated! Userbot can be used again.`",
+            "`ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ Successfully Updated! Userbot can be used again.`",
         )
         args = [sys.executable, "-m", "Azazel"]
         execle(sys.executable, *args, environ)
@@ -309,7 +309,7 @@ async def updatees(client: Client, message: Message):
 add_command_help(
     "Update",
     [
-        [f"cekupdate", "Cek Update Dari Azazel-Project."],
-        [f"update deploy", "Untuk Update Azazel-Project."],
+        [f"cekupdate", "Cek Update Dari ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ."],
+        [f"update deploy", "Untuk Update ᴢᴜʟʟ-ᴜꜱᴇʀʙᴏᴛ."],
     ],
 )
